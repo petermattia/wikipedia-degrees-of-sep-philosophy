@@ -5,17 +5,18 @@ Created on Fri Sep 29 13:38:17 2017
 
 @author: peter
 
-Wiki-philosophy.py is a script to 
+Wiki-philosophy.py is a script to analyze the degrees of seperation
+of articles from Wikipedia's 'philosophy' page. 
+See https://en.wikipedia.org/wiki/Wikipedia:Getting_to_Philosophy
+for additional context.
 
-TODO:
-    Looping: return to original: Finite set -> mathematics
 """
 def main():
     import matplotlib.pyplot as plt 
     
     # Random pages
-    df = randomPageAnalysis()
-    histogram(df.Degrees)
+    randDist = randomPageAnalysis()
+    histogram(randDist.Degrees)
     plt.xlabel('Degrees from ''/wiki/Philosophy''')
     plt.ylabel('Count')
     
@@ -43,6 +44,7 @@ def randomPageAnalysis():
         if degrees>0:
             df.loc[len(df)] = [firstPage, degrees]
     
+    df.to_csv('random.csv', index=False)
     return df
     
 def top100PageAnalysis():
@@ -53,11 +55,16 @@ def top100PageAnalysis():
     
     degree = []
     
+    # Gets the degrees of seperation for the top 100 pages
     for l in df.Link:
         degree.append(crawlWikiPageWrapper(l[6:])[0])
     
+    # Append degrees column to dataframe
     df = df.assign(Degrees = degree)
-    df.to_csv('top100.csv')
+    
+    # Save and return
+    df.to_csv('top100.csv', index=False)
+    return df
 
 def crawlWikiPageWrapper(article='Special:Random'):
     import sys
@@ -197,6 +204,10 @@ def histogram(dist):
     plt.hist(dist, bins=np.arange(min(dist)-0.5, max(dist)+1.5, 1))
     
 def getTop100Pages():
+    """
+    Creates a dataframe of the top 100 pages on Wikipedia. 
+    See article for url
+    """
     import requests
     from bs4 import BeautifulSoup
     import pandas as pd
@@ -220,6 +231,10 @@ def getTop100Pages():
     return df
         
 def isGoodRow(row):
+    """
+    Boolean for if a row in the 'Top 100 articles' table is ranked
+    (some rows are unranked, for various reasons)
+    """
     if not row.name == 'tr':
         return False
     # Geotags for geographic places are bad
