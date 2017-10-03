@@ -11,26 +11,41 @@ See https://en.wikipedia.org/wiki/Wikipedia:Getting_to_Philosophy
 for additional context.
 
 """
+import matplotlib.pyplot as plt 
+import pandas as pd
+import requests
+from bs4 import BeautifulSoup
+import sys
+
 def main():
-    import matplotlib.pyplot as plt 
-    
     # Random pages
     randDist = randomPageAnalysis()
     histogram(randDist.Degrees)
     plt.xlabel('Degrees from ''/wiki/Philosophy''')
     plt.ylabel('Count')
+    plt.savefig('random_dist.png')
+    plt.savefig('random_dist.svg')
     
     # Top 100 pages
-    top100dist = top100PageAnalysis();
+    top100Dist = top100PageAnalysis();
     plt.figure()
-    plt.plot(top100dist.Rank,top100dist.Degrees)
+    plt.plot(top100Dist.Rank,top100Dist.Degrees)
+    plt.xlabel('Page rank')
+    plt.ylabel('Degrees from ''/wiki/Philosophy''')
+    plt.savefig('top100_rankvsdegrees.png')
+    plt.savefig('top100_rankvsdegrees.svg')
+    
+    # Top 100 pages - histogram
+    histogram(top100Dist.Degrees)
+    plt.xlabel('Degrees from ''/wiki/Philosophy''')
+    plt.ylabel('Count')
+    plt.savefig('top100_dist.png')
+    plt.savefig('top100_dist.svg')
 
 def randomPageAnalysis():
     """
     Analyzes the degrees of seperation for 'num' random pages
-    """
-    import pandas as pd
-    
+    """    
     # Num repetitions
     num = 2
     
@@ -66,9 +81,7 @@ def top100PageAnalysis():
     df.to_csv('top100.csv', index=False)
     return df
 
-def crawlWikiPageWrapper(article='Special:Random'):
-    import sys
-    
+def crawlWikiPageWrapper(article='Special:Random'):    
     try:
         x, firstPage = crawlWikiPage(article)
         return x, firstPage
@@ -80,9 +93,6 @@ def crawlWikiPageWrapper(article='Special:Random'):
         return -1
         
 def crawlWikiPage(article='Special:Random'):
-    import requests
-    from bs4 import BeautifulSoup
-     
     # Get a random page and its soup
     req = requests.get('https://en.wikipedia.org/wiki/' + article)
     soup = BeautifulSoup(req.text, 'lxml')
@@ -208,10 +218,6 @@ def getTop100Pages():
     Creates a dataframe of the top 100 pages on Wikipedia. 
     See article for url
     """
-    import requests
-    from bs4 import BeautifulSoup
-    import pandas as pd
-    
     article = 'Wikipedia:Multiyear_ranking_of_most_viewed_pages'
     req = requests.get('https://en.wikipedia.org/wiki/' + article)
     soup = BeautifulSoup(req.text, 'lxml')
