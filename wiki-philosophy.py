@@ -11,7 +11,6 @@ See https://en.wikipedia.org/wiki/Wikipedia:Getting_to_Philosophy
 for additional context.
 
 """
-import matplotlib.pyplot as plt 
 import pandas as pd
 import requests
 from bs4 import BeautifulSoup
@@ -19,36 +18,18 @@ import sys
 
 def main():
     # Random pages
-    randDist = randomPageAnalysis()
-    histogram(randDist.Degrees)
-    plt.xlabel('Degrees from ''/wiki/Philosophy''')
-    plt.ylabel('Count')
-    plt.savefig('random_dist.png')
-    plt.savefig('random_dist.svg')
+    randomPageAnalysis(500)
     
     # Top 100 pages
-    top100Dist = top100PageAnalysis();
-    plt.figure()
-    plt.plot(top100Dist.Rank,top100Dist.Degrees)
-    plt.xlabel('Page rank')
-    plt.ylabel('Degrees from ''/wiki/Philosophy''')
-    plt.savefig('top100_rankvsdegrees.png')
-    plt.savefig('top100_rankvsdegrees.svg')
+    top100PageAnalysis()
     
-    # Top 100 pages - histogram
-    histogram(top100Dist.Degrees)
-    plt.xlabel('Degrees from ''/wiki/Philosophy''')
-    plt.ylabel('Count')
-    plt.savefig('top100_dist.png')
-    plt.savefig('top100_dist.svg')
+    # Top categories analysis
+    topCategoriesPageAnalysis()
 
-def randomPageAnalysis():
+def randomPageAnalysis(num=500):
     """
     Analyzes the degrees of seperation for 'num' random pages
-    """    
-    # Num repetitions
-    num = 2
-    
+    """
     # Create array for distribution
     df = pd.DataFrame(columns=('Text','Degrees'))
     
@@ -79,6 +60,26 @@ def top100PageAnalysis():
     
     # Save and return
     df.to_csv('top100.csv', index=False)
+    return df
+
+def topCategoriesPageAnalysis():
+    """
+    Analyzes the degrees of seperation for the top 30 entries in various
+    categories
+    """
+    df = getTopCategories()
+    
+    degree = []
+    
+    # Gets the degrees of seperation for the top pages in all categories
+    for l in df.Link:
+        degree.append(crawlWikiPageWrapper(l[6:])[0])
+    
+    # Append degrees column to dataframe
+    df = df.assign(Degrees = degree)
+    
+    # Save and return
+    df.to_csv('topcategories.csv', index=False)
     return df
 
 def crawlWikiPageWrapper(article='Special:Random'):    
@@ -128,15 +129,19 @@ def crawlWikiPage(article='Special:Random'):
                     # Break out of double loop
                     break
         
-        # Increment counter & list
-        i += 1
-        articles.append(l['href'])
-                
-        # Submit new request
-        link = 'https://en.wikipedia.org' + l['href']
-        req = requests.get(link)
-        soup = BeautifulSoup(req.text, 'lxml')
-        print(str(i) + '. ' + soup.title.text)
+        # If we've detected a good link, get next page. Otherwise, quit
+        if flag:
+            # Increment counter & list
+            i += 1
+            articles.append(l['href'])
+                    
+            # Submit new request
+            link = 'https://en.wikipedia.org' + l['href']
+            req = requests.get(link)
+            soup = BeautifulSoup(req.text, 'lxml')
+            print(str(i) + '. ' + soup.title.text)
+        else:
+            break
         
     return i, firstPage
 
@@ -145,9 +150,9 @@ def isGoodContent(content):
     isGoodContent(content) makes sure content is a <p> tag and not 
     geographic coordinates (see top of wiki/Canada)
     """
-    # All main-text content is in <p> tags. 
+    # All main-text content is in <p> or <ul> tags. 
     # This line primarily excludes sidebar content
-    if not content.name == 'p':
+    if content.name not in {'p','ul'}:
         return False
     # Geotags for geographic places are bad
     if content.text.startswith('Coordinates: '):
@@ -204,14 +209,6 @@ def isLinkLooping(l, articles):
         if tag == a:
             return True
     return False
-
-def histogram(dist):
-    """
-    Wrapper function to get histogram() functionality in MATLAB
-    """
-    import numpy as np
-    import matplotlib.pyplot as plt 
-    plt.hist(dist, bins=np.arange(min(dist)-0.5, max(dist)+1.5, 1))
     
 def getTop100Pages():
     """
@@ -236,6 +233,37 @@ def getTop100Pages():
     
     return df
         
+def getTopCategories():
+    """
+    Creates a dataframe of the top 100 pages on Wikipedia. 
+    See article for url
+    """
+    article = 'Wikipedia:Multiyear_ranking_of_most_viewed_pages'
+    req = requests.get('https://en.wikipedia.org/wiki/' + article)
+    soup = BeautifulSoup(req.text, 'lxml')
+    main_text = soup.body.find('div', {'class':'mw-parser-output'})
+    tables = main_text.find_all('table',{'class':'wikitable'})
+    
+    # tables is a list of 16 tables on the 'article' page on Wikipedia
+    
+    df = pd.DataFrame(columns=('Table','Rank','Text','Link','Popularity'))
+    
+    # table counter
+    i = 0
+    
+    for table in tables:
+        i += 1
+        if not i == 1: # exclude first row
+            for row in table:
+                if isGoodRow(row):
+                    rank = int(row.contents[1].text)
+                    text = row.contents[3].find('a').text
+                    link = row.contents[3].find('a')['href']
+                    pop = float(row.contents[-2].text)
+                    df.loc[len(df)] = [i, rank, text, link, pop]
+    
+    return df
+
 def isGoodRow(row):
     """
     Boolean for if a row in the 'Top 100 articles' table is ranked
