@@ -15,8 +15,10 @@ It uses the CSVs created in wiki-philosophy.py
 
 import matplotlib.pyplot as plt 
 import numpy as np
+from scipy import stats as sp
 import pandas as pd
 from collections import OrderedDict
+import bokeh.plotting as bp
 from bokeh.plotting import figure, output_file, show
 from bokeh.models import HoverTool, OpenURL, TapTool
 from bokeh.resources import CDN
@@ -41,6 +43,13 @@ plt.title('Distribution of 500 random Wikipedia pages')
 plt.savefig('random_dist.png')
 plt.savefig('random_dist.svg')
 
+# Distribution statistics
+print(np.average(randDist.Degrees))
+print(np.median(randDist.Degrees))
+print(sp.mode(randDist.Degrees))
+print(np.min(randDist.Degrees))
+print(np.max(randDist.Degrees))
+
 ## TOP 100 PAGES - HISTOGRAM
 plt.figure()
 histogram(top100Dist.Degrees)
@@ -49,6 +58,13 @@ plt.ylabel('Count')
 plt.title('Distribution of the top 100 Wikipedia pages')
 plt.savefig('top100_dist.png')
 plt.savefig('top100_dist.svg')
+
+# Distribution statistics
+print(np.average(top100Dist.Degrees))
+print(np.median(top100Dist.Degrees))
+print(sp.mode(top100Dist.Degrees))
+print(np.min(top100Dist.Degrees))
+print(np.max(top100Dist.Degrees))
 
 ## TOP 100 PAGES - RANK VS DEGREES
 plt.figure()
@@ -61,7 +77,7 @@ plt.savefig('top100_rankvsdegrees.svg')
 
 ## TOP 100 PAGES - RANK VS DEGREES ON BOKEH
 output_file("top100.html")
-source = ColumnDataSource(
+source = bp.ColumnDataSource(
     data=dict(
         x=top100Dist.index.values+1,
         y=top100Dist.Degrees,
