@@ -14,4 +14,8 @@ Sample results:
 
 ![Top pages by category](https://raw.githubusercontent.com/petermattia/wikipedia-degrees-of-sep-philosophy/master/categories_popularity.png)
 
-Oct 16, 2017 update: 
+Oct 16, 2017 update: As an exercise, I created a new branch in which I refactored
+the code to be more "pythonic". After re-running the script to test it,
+I found that my results were quite different from when I last ran the script a week ago.
+Looking at the wikipedia edit history, the pages are constantly changing.
+Thus, the CSVs and graphical results are different for each branch.
