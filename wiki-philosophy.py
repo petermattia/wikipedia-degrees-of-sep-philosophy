@@ -34,7 +34,7 @@ def randomPageAnalysis(num=500):
     df = pd.DataFrame(columns=('Text','Degrees'))
     
     # repeat 100 times
-    for x in range(0, num):
+    for _ in range(0, num):
         degrees, firstPage = crawlWikiPageWrapper()
         # Exclude errors
         if degrees>0:
@@ -92,7 +92,7 @@ def crawlWikiPageWrapper(article='Special:Random'):
     except:
         print("Unexpected error:", sys.exc_info()[0])
         return -1
-        
+
 def crawlWikiPage(article='Special:Random'):
     # Get a random page and its soup
     req = requests.get('https://en.wikipedia.org/wiki/' + article)
@@ -112,22 +112,22 @@ def crawlWikiPage(article='Special:Random'):
         
         # Get all href_tags (links) in main_text.contents
         # Break nested loop if we find a good tag
-        flag = False
-        for content in main_text.contents:
-            # Test content to make sure it is <p>, not sidebar, etc
-            if isGoodContent(content):
-                # Get all <a> tags (links) in content
-                links_in_content = content.find_all('a',href=True)
-                for l in links_in_content:
-                    if isLinkGood(l,content, articles):
-                        print('  Good link: '+ l['href'])
-                        flag = True
-                        break
-                    else:
-                        print('  Bad link: ' + l['href'])
-                if flag:
-                    # Break out of double loop
+        flag = False            
+        # Test content to make sure it is <p>, not sidebar, etc
+        content_gen = (c for c in main_text.contents if isGoodContent(c))
+        for content in content_gen:
+            # Get all <a> tags (links) in content
+            links_in_content = content.find_all('a',href=True)
+            for l in links_in_content:
+                if isLinkGood(l,content, articles):
+                    print('  Good link: '+ l['href'])
+                    flag = True
                     break
+                else:
+                    print('  Bad link: ' + l['href'])
+            if flag:
+                # Break out of double loop
+                break
         
         # If we've detected a good link, get next page. Otherwise, quit
         if flag:
@@ -136,8 +136,7 @@ def crawlWikiPage(article='Special:Random'):
             articles.append(l['href'])
                     
             # Submit new request
-            link = 'https://en.wikipedia.org' + l['href']
-            req = requests.get(link)
+            req = requests.get('https://en.wikipedia.org' + l['href'])
             soup = BeautifulSoup(req.text, 'lxml')
             print(str(i) + '. ' + soup.title.text)
         else:
@@ -163,8 +162,8 @@ def isLinkGood(l, content, articles):
     """
     isLinkGood(l,content) performs three tests on a link:
         1. isGoodReference - in-page citations, meta pages, external links, etc
-        2. isLinkInParentheses - 
-        3. isLinkLooping - 
+        2. isLinkInParentheses - tests if link is in parentheses
+        3. isLinkLooping - tests if link is looping
     
     Think of the boolean logic as:
         "Is the link reference good, not in parentheses, and not in a loop?"
@@ -189,26 +188,19 @@ def isGoodReference(l):
     
     return True
 
-def isLinkInParentheses(t, content):
+def isLinkInParentheses(tag, content):
     """
     Finds if link is in parentheses (excluded content, typically languages)
     """
-    txt = str(content)
-    idx = txt.index(str(t))
-    
-    l = txt[0:idx].count('(')
-    r = txt[0:idx].count(')')
-    return l>r
+    idx = str(content).index(str(tag)) # find location of link in txt
+    txt = str(content)[0:idx] # get text up until idx
+    return txt.count('(') > txt.count(')') # count '(' vs ')'
 
 def isLinkLooping(l, articles):
     """
     Finds if we've already crawled this link before
     """
-    tag = l['href']
-    for a in articles:
-        if tag == a:
-            return True
-    return False
+    return l['href'] in articles
     
 def getTop100Pages():
     """
@@ -223,13 +215,13 @@ def getTop100Pages():
     
     df = pd.DataFrame(columns=('Rank','Text','Link','Popularity'))
     
-    for row in table:
-        if isGoodRow(row):
-            rank = int(row.contents[1].text)
-            text = row.contents[3].find('a').text
-            link = row.contents[3].find('a')['href']
-            pop = float(row.contents[5].text)
-            df.loc[len(df)] = [rank, text, link, pop]
+    row_gen = (row for row in table if isGoodRow(row))
+    for row in row_gen:
+        rank = int(row.contents[1].text)
+        text = row.contents[3].find('a').text
+        link = row.contents[3].find('a')['href']
+        pop = float(row.contents[5].text)
+        df.loc[len(df)] = [rank, text, link, pop]
     
     return df
         
@@ -242,25 +234,20 @@ def getTopCategories():
     req = requests.get('https://en.wikipedia.org/wiki/' + article)
     soup = BeautifulSoup(req.text, 'lxml')
     main_text = soup.body.find('div', {'class':'mw-parser-output'})
-    tables = main_text.find_all('table',{'class':'wikitable'})
-    
     # tables is a list of 16 tables on the 'article' page on Wikipedia
+    # exclude first table - this is the top100 table
+    tables = main_text.find_all('table',{'class':'wikitable'})[1:]
     
     df = pd.DataFrame(columns=('Table','Rank','Text','Link','Popularity'))
     
-    # table counter
-    i = 0
-    
-    for table in tables:
-        i += 1
-        if not i == 1: # exclude first row
-            for row in table:
-                if isGoodRow(row):
-                    rank = int(row.contents[1].text)
-                    text = row.contents[3].find('a').text
-                    link = row.contents[3].find('a')['href']
-                    pop = float(row.contents[-2].text)
-                    df.loc[len(df)] = [i, rank, text, link, pop]
+    for i, table in enumerate(tables):
+        row_gen = (row for row in table if isGoodRow(row))
+        for row in row_gen:
+            rank = int(row.contents[1].text)
+            text = row.contents[3].find('a').text
+            link = row.contents[3].find('a')['href']
+            pop = float(row.contents[-2].text)
+            df.loc[len(df)] = [i+1, rank, text, link, pop]
     
     return df
 
@@ -271,7 +258,7 @@ def isGoodRow(row):
     """
     if not row.name == 'tr':
         return False
-    # Geotags for geographic places are bad
+    # See if row has numerical ranking (no asterisk, etc)
     try:
         int(row.contents[1].text)
         return True

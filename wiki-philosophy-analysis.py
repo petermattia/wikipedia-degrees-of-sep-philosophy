@@ -30,6 +30,19 @@ def histogram(dist):
     """
     plt.hist(dist, bins=np.arange(min(dist)-0.5, max(dist)+1.5, 1))
 
+def printStats(degrees,label):
+    print('-------Printing population statistics for distribution "'+label+'"-------')
+    print("Mean of " + label +  " distribution = " + str(np.average(degrees)))
+    print("Median of " + label +  " distribution = " + str(np.median(degrees)))
+    print("Mode of " + label +  " distribution = " + str(sp.mode(degrees)))
+    print("Minimum of " + label +  " distribution = " + str(np.min(degrees)))
+    print("Maximum of " + label +  " distribution = " + str(np.max(degrees)))
+    
+def saveFigs(filename):
+    # Saves figure as a png and as a svg
+    plt.savefig(filename + '.png')
+    plt.savefig(filename + '.svg')
+
 plt.close("all")
 randDist = pd.read_csv('random.csv')
 top100Dist = pd.read_csv('top100.csv')
@@ -40,15 +53,7 @@ histogram(randDist.Degrees)
 plt.xlabel('Degrees from ''/wiki/Philosophy''')
 plt.ylabel('Count')
 plt.title('Distribution of 500 random Wikipedia pages')
-plt.savefig('random_dist.png')
-plt.savefig('random_dist.svg')
-
-# Distribution statistics
-print(np.average(randDist.Degrees))
-print(np.median(randDist.Degrees))
-print(sp.mode(randDist.Degrees))
-print(np.min(randDist.Degrees))
-print(np.max(randDist.Degrees))
+saveFigs('random_dist')
 
 ## TOP 100 PAGES - HISTOGRAM
 plt.figure()
@@ -56,15 +61,11 @@ histogram(top100Dist.Degrees)
 plt.xlabel('Degrees from ''/wiki/Philosophy''')
 plt.ylabel('Count')
 plt.title('Distribution of the top 100 Wikipedia pages')
-plt.savefig('top100_dist.png')
-plt.savefig('top100_dist.svg')
+saveFigs('top100_dist')
 
 # Distribution statistics
-print(np.average(top100Dist.Degrees))
-print(np.median(top100Dist.Degrees))
-print(sp.mode(top100Dist.Degrees))
-print(np.min(top100Dist.Degrees))
-print(np.max(top100Dist.Degrees))
+printStats(randDist.Degrees,'random')
+printStats(top100Dist.Degrees,'top 100')
 
 ## TOP 100 PAGES - RANK VS DEGREES
 plt.figure()
@@ -72,8 +73,7 @@ plt.plot(top100Dist.Rank,top100Dist.Degrees,'o')
 plt.xlabel('Page rank')
 plt.ylabel('Degrees from ''/wiki/Philosophy''')
 plt.title('Degrees vs page rank for the top 100 Wikipedia pages')
-plt.savefig('top100_rankvsdegrees.png')
-plt.savefig('top100_rankvsdegrees.svg')
+saveFigs('top100_rankvsdegrees')
 
 ## TOP 100 PAGES - RANK VS DEGREES ON BOKEH
 output_file("top100.html")
@@ -129,7 +129,7 @@ for i in topCat.Table.unique():
     d = topCat.loc[topCat['Table'] == i].Degrees.tolist()
     p = topCat.loc[topCat['Table'] == i].Popularity.tolist()
     t = topCat.loc[topCat['Table'] == i].Text.tolist()[0]
-    catsdf.loc[len(catsdf)] = [cats[i-2], d, p, t]
+    catsdf.loc[len(catsdf)] = [cats[i-1], d, p, t]
 
 ## BOX PLOT: DEGREES VS CATEGORY
 fig = plt.figure()
@@ -139,8 +139,7 @@ ax.set_xticklabels(cats, rotation=45,ha="right")
 plt.ylabel('Degrees from ''/wiki/Philosophy''')
 plt.title('Degrees from ''/wiki/Philosophy by category''')
 fig.tight_layout()
-plt.savefig('categories_boxplot.png')
-plt.savefig('categories_boxplot.svg')
+saveFigs('categories_boxplot')
 
 ## BAR PLOT: POPULARITY VS CATEGORY
 n_groups = len(catsdf.Popularity)
@@ -171,5 +170,4 @@ plt.xticks(index + bar_width, cats)
 plt.setp(plt.xticks()[1], rotation=45,ha="right")
 plt.legend()
 plt.tight_layout()
-plt.savefig('categories_popularity.png')
-plt.savefig('categories_popularity.svg')
+saveFigs('categories_popularity')

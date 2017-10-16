@@ -1,0 +1,456 @@
+Table,Rank,Text,Link,Popularity,Degrees
+2,1,United States,/wiki/United_States,167.0,9
+2,2,India,/wiki/India,100.0,24
+2,3,United Kingdom,/wiki/United_Kingdom,91.8,8
+2,4,Canada,/wiki/Canada,75.8,14
+2,5,Australia,/wiki/Australia,72.2,14
+2,6,Japan,/wiki/Japan,64.1,8
+2,7,Germany,/wiki/Germany,63.3,8
+2,8,China,/wiki/China,60.8,7
+2,9,France,/wiki/France,59.0,26
+2,10,Russia,/wiki/Russia,58.7,14
+2,11,Singapore,/wiki/Singapore,48.3,11
+2,12,Israel,/wiki/Israel,47.3,15
+2,13,Brazil,/wiki/Brazil,46.8,14
+2,14,Italy,/wiki/Italy,44.2,7
+2,15,Philippines,/wiki/Philippines,43.6,7
+2,16,Spain,/wiki/Spain,43.3,8
+2,17,Netherlands,/wiki/Netherlands,42.8,18
+2,18,New Zealand,/wiki/New_Zealand,41.3,15
+2,19,Turkey,/wiki/Turkey,40.2,14
+2,20,Mexico,/wiki/Mexico,39.5,9
+2,20,Pakistan,/wiki/Pakistan,39.5,24
+2,22,South Africa,/wiki/South_Africa,38.9,9
+2,23,Indonesia,/wiki/Indonesia,38.5,7
+2,24,North Korea,/wiki/North_Korea,37.7,9
+2,25,Switzerland,/wiki/Switzerland,36.7,9
+2,26,Egypt,/wiki/Egypt,35.7,14
+2,27,Perú,/wiki/Per%C3%BA,34.8,14
+2,28,Greece,/wiki/Greece,33.6,7
+2,29,Iran,/wiki/Iran,33.2,8
+2,30,Ireland,/wiki/Ireland,33.0,14
+3,1,New York City,/wiki/New_York_City,59.7,15
+3,2,London,/wiki/London,50.4,10
+3,3,Singapore,/wiki/Singapore,47.4,11
+3,4,Hong Kong,/wiki/Hong_Kong,37.2,16
+3,5,Los Angeles,/wiki/Los_Angeles,31.7,14
+3,6,Paris,/wiki/Paris,30.5,10
+3,7,Chicago,/wiki/Chicago,28.8,15
+3,8,"Washington, D.C.","/wiki/Washington,_D.C.",26.9,10
+3,9,San Francisco,/wiki/San_Francisco,24.3,14
+3,10,Rome,/wiki/Rome,23.7,10
+3,11,Mumbai,/wiki/Mumbai,23.3,10
+3,12,Toronto,/wiki/Toronto,21.2,17
+3,13,Philadelphia,/wiki/Philadelphia,20.8,9
+3,14,Monaco,/wiki/Monaco,19.5,10
+3,15,Amsterdam,/wiki/Amsterdam,19.1,11
+3,16,Tokyo,/wiki/Tokyo,18.7,9
+3,16,Boston,/wiki/Boston,18.7,10
+3,18,Barcelona,/wiki/Barcelona,17.9,11
+3,19,Istanbul,/wiki/Istanbul,17.8,15
+3,20,Berlin,/wiki/Berlin,17.4,10
+3,21,Pompeii,/wiki/Pompeii,17.2,15
+3,22,Rio de Janeiro,/wiki/Rio_de_Janeiro,16.9,16
+3,22,Seattle,/wiki/Seattle,16.9,14
+3,24,Venice,/wiki/Venice,16.7,8
+3,25,Sparta,/wiki/Sparta,16.3,10
+3,25,Shanghai,/wiki/Shanghai,16.3,9
+3,27,Jerusalem,/wiki/Jerusalem,15.7,15
+3,28,Macau,/wiki/Macau,15.5,9
+3,29,Montreal,/wiki/Montreal,15.4,18
+3,30,Vancouver,/wiki/Vancouver,15.3,15
+4,1,Donald Trump,/wiki/Donald_Trump,124.0,11
+4,2,Barack Obama,/wiki/Barack_Obama,114.0,11
+4,3,Michael Jackson,/wiki/Michael_Jackson,95.7,25
+4,4,Lady Gaga,/wiki/Lady_Gaga,92.0,13
+4,5,Eminem,/wiki/Eminem,88.9,15
+4,6,Adolf Hitler,/wiki/Adolf_Hitler,83.0,16
+4,7,Justin Bieber,/wiki/Justin_Bieber,82.4,10
+4,8,Steve Jobs,/wiki/Steve_Jobs,77.0,10
+4,9,Lil Wayne,/wiki/Lil_Wayne,73.5,13
+4,10,Kim Kardashian,/wiki/Kim_Kardashian,73.0,12
+4,11,Cristiano Ronaldo,/wiki/Cristiano_Ronaldo,67.6,10
+4,12,Miley Cyrus,/wiki/Miley_Cyrus,67.3,20
+4,13,Rihanna,/wiki/Rihanna,64.1,18
+4,14,Selena Gomez,/wiki/Selena_Gomez,63.4,21
+4,15,Abraham Lincoln,/wiki/Abraham_Lincoln,62.9,11
+4,16,Taylor Swift,/wiki/Taylor_Swift,62.7,7
+4,17,Elizabeth II,/wiki/Elizabeth_II,62.3,12
+4,18,Lionel Messi,/wiki/Lionel_Messi,60.9,12
+4,19,Johnny Depp,/wiki/Johnny_Depp,60.2,7
+4,20,Tupac Shakur,/wiki/Tupac_Shakur,60.0,15
+4,21,Kanye West,/wiki/Kanye_West,59.0,11
+4,22,Stephen Hawking,/wiki/Stephen_Hawking,58.5,13
+4,23,Albert Einstein,/wiki/Albert_Einstein,57.5,8
+4,24,Angelina Jolie,/wiki/Angelina_Jolie,56.4,13
+4,25,Leonardo DiCaprio,/wiki/Leonardo_DiCaprio,55.5,18
+4,26,Nicki Minaj,/wiki/Nicki_Minaj,55.2,12
+4,27,William Shakespeare,/wiki/William_Shakespeare,55.1,18
+4,28,Mark Zuckerberg,/wiki/Mark_Zuckerberg,54.9,20
+4,29,Dwayne Johnson,/wiki/Dwayne_Johnson,54.9,14
+4,30,Michael Jordan,/wiki/Michael_Jordan,54.8,11
+5,1,Michael Jackson,/wiki/Michael_Jackson,95.7,25
+5,2,Lady Gaga,/wiki/Lady_Gaga,92.0,13
+5,3,Eminem,/wiki/Eminem,88.9,15
+5,4,Justin Bieber,/wiki/Justin_Bieber,82.4,10
+5,5,Lil Wayne,/wiki/Lil_Wayne,73.5,13
+5,6,Miley Cyrus,/wiki/Miley_Cyrus,67.3,20
+5,7,Rihanna,/wiki/Rihanna,64.1,18
+5,8,Selena Gomez,/wiki/Selena_Gomez,63.4,21
+5,9,Taylor Swift,/wiki/Taylor_Swift,62.7,7
+5,10,Tupac Shakur,/wiki/Tupac_Shakur,60.0,15
+5,11,Kanye West,/wiki/Kanye_West,59.0,11
+5,12,Nicki Minaj,/wiki/Nicki_Minaj,55.2,12
+5,13,Katy Perry,/wiki/Katy_Perry,54.3,13
+5,14,Adele,/wiki/Adele,53.0,14
+5,15,John Cena,/wiki/John_Cena,50.5,14
+5,16,Jay-Z,/wiki/Jay-Z,50.0,19
+5,17,Prince (musician),/wiki/Prince_(musician),48.3,14
+5,17,David Bowie,/wiki/David_Bowie,48.3,14
+5,19,Britney Spears,/wiki/Britney_Spears,47.3,13
+5,20,Elvis Presley,/wiki/Elvis_Presley,44.2,27
+5,21,Beyoncé Knowles,/wiki/Beyonc%C3%A9_Knowles,43.0,7
+5,22,Bob Marley,/wiki/Bob_Marley,42.8,17
+5,23,Ariana Grande,/wiki/Ariana_Grande,42.0,6
+5,24,Madonna (entertainer),/wiki/Madonna_(entertainer),41.9,19
+5,25,John Lennon,/wiki/John_Lennon,41.3,14
+5,26,Mariah Carey,/wiki/Mariah_Carey,40.1,21
+5,27,Demi Lovato,/wiki/Demi_Lovato,40.0,21
+5,28,Bruno Mars,/wiki/Bruno_Mars,39.6,13
+5,29,50 Cent,/wiki/50_Cent,39.2,10
+5,30,Freddie Mercury,/wiki/Freddie_Mercury,38.4,15
+6,1,Kim Kardashian,/wiki/Kim_Kardashian,73.0,12
+6,2,Johnny Depp,/wiki/Johnny_Depp,60.2,7
+6,3,Angelina Jolie,/wiki/Angelina_Jolie,56.4,13
+6,4,Leonardo DiCaprio,/wiki/Leonardo_DiCaprio,55.5,18
+6,5,Dwayne Johnson,/wiki/Dwayne_Johnson,54.9,14
+6,6,Mila Kunis,/wiki/Mila_Kunis,50.6,21
+6,7,Arnold Schwarzenegger,/wiki/Arnold_Schwarzenegger,49.7,13
+6,8,Will Smith,/wiki/Will_Smith,49.6,10
+6,9,Bruce Lee,/wiki/Bruce_Lee,47.6,18
+6,9,Marilyn Monroe,/wiki/Marilyn_Monroe,47.6,8
+6,11,Tom Cruise,/wiki/Tom_Cruise,46.9,13
+6,12,Scarlett Johansson,/wiki/Scarlett_Johansson,45.6,18
+6,13,Megan Fox,/wiki/Megan_Fox,44.7,6
+6,14,Jennifer Aniston,/wiki/Jennifer_Aniston,44.0,13
+6,15,The Undertaker,/wiki/The_Undertaker,43.8,14
+6,16,Jennifer Lawrence,/wiki/Jennifer_Lawrence,43.7,16
+6,17,Brad Pitt,/wiki/Brad_Pitt,43.6,15
+6,18,Heath Ledger,/wiki/Heath_Ledger,42.8,13
+6,19,Sunny Leone,/wiki/Sunny_Leone,42.4,11
+6,20,Emma Watson,/wiki/Emma_Watson,41.5,16
+6,21,Mark Wahlberg,/wiki/Mark_Wahlberg,40.7,14
+6,22,Kristen Stewart,/wiki/Kristen_Stewart,39.9,10
+6,23,Ryan Reynolds,/wiki/Ryan_Reynolds,39.4,21
+6,24,Charlie Sheen,/wiki/Charlie_Sheen,38.4,11
+6,25,Sylvester Stallone,/wiki/Sylvester_Stallone,38.0,13
+6,26,Robin Williams,/wiki/Robin_Williams,37.8,24
+6,27,Natalie Portman,/wiki/Natalie_Portman,37.5,7
+6,28,Clint Eastwood,/wiki/Clint_Eastwood,37.3,5
+6,29,Tom Hardy,/wiki/Tom_Hardy,35.8,25
+6,29,Salman Khan,/wiki/Salman_Khan,35.8,12
+7,1,Lionel Messi,/wiki/Lionel_Messi,67.6,12
+7,2,Cristiano Ronaldo,/wiki/Cristiano_Ronaldo,66.9,10
+7,3,Michael Jordan,/wiki/Michael_Jordan,54.8,11
+7,4,Muhammad Ali,/wiki/Muhammad_Ali,50.4,15
+7,5,LeBron James,/wiki/LeBron_James,46.8,11
+7,6,Kobe Bryant,/wiki/Kobe_Bryant,38.8,11
+7,7,O. J. Simpson,/wiki/O._J._Simpson,35.0,15
+7,8,Tom Brady,/wiki/Tom_Brady,34.0,14
+7,9,Roger Federer,/wiki/Roger_Federer,33.9,14
+7,10,Brock Lesnar,/wiki/Brock_Lesnar,33.4,14
+7,11,Michael Phelps,/wiki/Michael_Phelps,32.0,14
+7,11,Mike Tyson,/wiki/Mike_Tyson,32.0,15
+7,13,David Beckham,/wiki/David_Beckham,31.0,14
+7,14,Shaquille O'Neal,/wiki/Shaquille_O%27Neal,29.0,11
+7,15,Manny Pacquiao,/wiki/Manny_Pacquiao,28.5,12
+7,16,Peyton Manning,/wiki/Peyton_Manning,27.1,14
+7,17,Usain Bolt,/wiki/Usain_Bolt,25.8,17
+7,18,Sachin Tendulkar,/wiki/Sachin_Tendulkar,25.6,26
+7,19,Rafael Nadal,/wiki/Rafael_Nadal,25.5,14
+7,20,Tiger Woods,/wiki/Tiger_Woods,24.3,12
+7,21,"Floyd Mayweather, Jr.","/wiki/Floyd_Mayweather,_Jr.",23.3,15
+7,22,Neymar,/wiki/Neymar,22.8,12
+7,23,Ronaldinho,/wiki/Ronaldinho,22.4,12
+7,24,Zlatan Ibrahimović,/wiki/Zlatan_Ibrahimovi%C4%87,22.3,12
+7,25,Ronda Rousey,/wiki/Ronda_Rousey,21.9,13
+7,26,Novak Djokovic,/wiki/Novak_Djokovic,21.3,14
+7,27,Ronaldo,/wiki/Ronaldo,21.2,10
+7,28,Wayne Rooney,/wiki/Wayne_Rooney,21.0,12
+7,29,Serena Williams,/wiki/Serena_Williams,20.5,14
+7,30,Magic Johnson,/wiki/Magic_Johnson,19.7,11
+8,1,Donald Trump,/wiki/Donald_Trump,124.0,11
+8,2,Barack Obama,/wiki/Barack_Obama,114.0,11
+8,3,Adolf Hitler,/wiki/Adolf_Hitler,83.0,16
+8,4,Abraham Lincoln,/wiki/Abraham_Lincoln,62.9,11
+8,5,Elizabeth II,/wiki/Elizabeth_II,62.3,12
+8,6,John F. Kennedy,/wiki/John_F._Kennedy,52.5,11
+8,7,Henry VIII of England,/wiki/Henry_VIII_of_England,45.6,10
+8,8,Nelson Mandela,/wiki/Nelson_Mandela,45.5,13
+8,9,George W. Bush,/wiki/George_W._Bush,43.1,11
+8,10,Ronald Reagan,/wiki/Ronald_Reagan,42.5,11
+8,11,Bill Clinton,/wiki/Bill_Clinton,40.0,11
+8,12,George Washington,/wiki/George_Washington,38.1,11
+8,13,Osama bin Laden,/wiki/Osama_bin_Laden,37.6,22
+8,13,Franklin D. Roosevelt,/wiki/Franklin_D._Roosevelt,37.6,11
+8,15,Elizabeth I,/wiki/Elizabeth_I,37.0,10
+8,16,Winston Churchill,/wiki/Winston_Churchill,36.3,14
+8,17,Queen Victoria,/wiki/Queen_Victoria,36.0,19
+8,18,Che Guevara,/wiki/Che_Guevara,33.7,11
+8,19,Joseph Stalin,/wiki/Joseph_Stalin,33.5,13
+8,20,Mahatma Gandhi,/wiki/Mahatma_Gandhi,31.7,18
+8,21,Richard Nixon,/wiki/Richard_Nixon,31.5,11
+8,22,Sarah Palin,/wiki/Sarah_Palin,30.8,10
+8,23,Vladimir Putin,/wiki/Vladimir_Putin,29.7,10
+8,24,Theodore Roosevelt,/wiki/Theodore_Roosevelt,29.3,11
+8,25,Thomas Jefferson,/wiki/Thomas_Jefferson,28.8,15
+8,26,Benjamin Franklin,/wiki/Benjamin_Franklin,28.3,8
+8,27,Fidel Castro,/wiki/Fidel_Castro,28.0,23
+8,27,George H. W. Bush,/wiki/George_H._W._Bush,28.0,11
+8,29,Hillary Clinton,/wiki/Hillary_Clinton,27.0,11
+8,30,Mitt Romney,/wiki/Mitt_Romney,25.7,8
+9,1,Jesus,/wiki/Jesus,36.7,14
+9,2,Alexander the Great,/wiki/Alexander_the_Great,33.0,13
+9,3,Muhammad,/wiki/Muhammad,29.2,21
+9,4,Julius Caesar,/wiki/Julius_Caesar,27.5,15
+9,5,Genghis Khan,/wiki/Genghis_Khan,24.1,14
+9,6,Aristotle,/wiki/Aristotle,23.0,13
+9,7,Spartacus,/wiki/Spartacus,20.0,12
+9,8,Plato,/wiki/Plato,19.6,2
+9,9,Gautama Buddha,/wiki/Gautama_Buddha,19.4,16
+9,10,Joan of Arc,/wiki/Joan_of_Arc,18.1,10
+9,11,Socrates,/wiki/Socrates,17.7,4
+9,12,Charlemagne,/wiki/Charlemagne,15.0,14
+9,13,Tutankhamun,/wiki/Tutankhamun,14.8,9
+9,14,Moses,/wiki/Moses,14.3,14
+9,15,William Wallace,/wiki/William_Wallace,14.0,9
+9,16,Marco Polo,/wiki/Marco_Polo,13.8,9
+9,17,Nero,/wiki/Nero,13.5,19
+9,18,Caligula,/wiki/Caligula,12.7,18
+9,19,Hannibal,/wiki/Hannibal,12.2,16
+9,20,Confucius,/wiki/Confucius,12.0,15
+9,20,Ragnar Lodbrok,/wiki/Ragnar_Lodbrok,12.0,14
+9,22,Cleopatra,/wiki/Cleopatra,11.6,17
+9,23,Archimedes,/wiki/Archimedes,10.6,13
+9,24,Pythagoras,/wiki/Pythagoras,10.5,9
+9,24,Abraham,/wiki/Abraham,10.5,20
+9,24,Asoka,/wiki/Asoka,10.0,9
+9,27,Richard I of England,/wiki/Richard_I_of_England,10.2,10
+9,28,David,/wiki/David,10.0,16
+9,29,Saint Peter,/wiki/Saint_Peter,9.8,24
+9,30,Mary Magdalene,/wiki/Mary_Magdalene,9.5,14
+10,1,Willow Smith,/wiki/Willow_Smith,13.7,11
+10,2,Maddie Ziegler,/wiki/Maddie_Ziegler,8.2,19
+10,3,Jackie Evancho,/wiki/Jackie_Evancho,5.6,11
+10,4,Noah Cyrus,/wiki/Noah_Cyrus,5.5,11
+10,5,Prince George of Cambridge,/wiki/Prince_George_of_Cambridge,5.0,15
+10,6,Mackenzie Foy,/wiki/Mackenzie_Foy,4.3,23
+10,7,Lady Louise Windsor,/wiki/Lady_Louise_Windsor,4.2,15
+10,8,"James, Viscount Severn","/wiki/James,_Viscount_Severn",3.2,15
+10,9,Millie Bobby Brown,/wiki/Millie_Bobby_Brown,3.1,15
+10,10,Rowan Blanchard,/wiki/Rowan_Blanchard,3.0,20
+10,11,Skai Jackson,/wiki/Skai_Jackson,2.9,20
+10,12,Princess Charlotte of Cambridge,/wiki/Princess_Charlotte_of_Cambridge,2.8,15
+10,13,Quvenzhané Wallis,/wiki/Quvenzhan%C3%A9_Wallis,2.5,5
+10,14,Auli'i Cravalho,/wiki/Auli%27i_Cravalho,2.4,13
+10,15,Connie Talbot,/wiki/Connie_Talbot,2.2,9
+10,15,Madison De La Garza,/wiki/Madison_De_La_Garza,2.2,11
+10,15,Jazz Jennings,/wiki/Jazz_Jennings,2.2,19
+10,18,Jacob Tremblay,/wiki/Jacob_Tremblay,2.1,11
+10,19,Willow Shields,/wiki/Willow_Shields,2.0,19
+10,19,Harshaali Malhotra,/wiki/Harshaali_Malhotra,2.0,12
+10,21,Frankie Jonas,/wiki/Frankie_Jonas,1.8,11
+10,21,Laurie Hernandez,/wiki/Laurie_Hernandez,1.8,16
+10,23,Yara Shahidi,/wiki/Yara_Shahidi,1.7,16
+10,24,Ty Simpkins,/wiki/Ty_Simpkins,1.6,20
+10,24,David Mazouz,/wiki/David_Mazouz,1.6,11
+10,26,Jasmine Thompson,/wiki/Jasmine_Thompson,1.5,19
+10,26,Ramona Marquez,/wiki/Ramona_Marquez,1.5,13
+10,26,Aubrey Anderson-Emmons,/wiki/Aubrey_Anderson-Emmons,1.5,22
+10,29,Davis Cleveland,/wiki/Davis_Cleveland,1.4,10
+10,29,Jared S. Gilmore,/wiki/Jared_S._Gilmore,1.4,19
+11,1,The Beatles,/wiki/The_Beatles,89.2,15
+11,2,One Direction,/wiki/One_Direction,51.0,13
+11,3,Metallica,/wiki/Metallica,36.0,16
+11,3,Pink Floyd,/wiki/Pink_Floyd,36.0,15
+11,5,Linkin Park,/wiki/Linkin_Park,32.0,15
+11,6,Red Hot Chili Peppers,/wiki/Red_Hot_Chili_Peppers,31.0,13
+11,7,Led Zeppelin,/wiki/Led_Zeppelin,30.0,15
+11,8,Coldplay,/wiki/Coldplay,27.0,15
+11,8,Queen,/wiki/Queen_(band),27.0,17
+11,8,Daft Punk,/wiki/Daft_Punk,27.0,14
+11,11,AC/DC,/wiki/AC/DC,26.0,16
+11,12,Slipknot,/wiki/Slipknot_(band),25.0,16
+11,13,Nirvana,/wiki/Nirvana_(band),24.0,15
+11,13,Green Day,/wiki/Green_Day,24.0,16
+11,13,The Rolling Stones,/wiki/The_Rolling_Stones,24.0,15
+11,13,Guns N' Roses,/wiki/Guns_N%27_Roses,24.0,16
+11,17,Iron Maiden,/wiki/Iron_Maiden,23.0,16
+11,18,Jonas Brothers,/wiki/Jonas_Brothers,22.0,15
+11,18,Fifth Harmony,/wiki/Fifth_Harmony,22.0,14
+11,20,Kiss,/wiki/Kiss_(band),21.0,15
+11,20,Spice Girls,/wiki/Spice_Girls,21.0,14
+11,22,Avenged Sevenfold,/wiki/Avenged_Sevenfold,20.0,16
+11,22,Foo Fighters,/wiki/Foo_Fighters,20.0,15
+11,22,Radiohead,/wiki/Radiohead,20.0,15
+11,22,Muse,/wiki/Muse_(band),20.0,15
+11,22,Paramore,/wiki/Paramore,20.0,15
+11,20,Backstreet Boys,/wiki/Backstreet_Boys,20.0,15
+11,20,Gorillaz,/wiki/Gorillaz,20.0,12
+11,29,Maroon 5,/wiki/Maroon_5,19.0,16
+11,29,Blink-182,/wiki/Blink-182,19.0,15
+11,29,U2,/wiki/U2,19.0,15
+12,1,Manchester United F.C.,/wiki/Manchester_United_F.C.,43.0,12
+12,2,FC Barcelona,/wiki/FC_Barcelona,37.5,12
+12,3,Chelsea F.C.,/wiki/Chelsea_F.C.,33.0,12
+12,4,Arsenal F.C.,/wiki/Arsenal_F.C.,32.0,12
+12,4,Real Madrid C.F.,/wiki/Real_Madrid_C.F.,32.0,12
+12,6,Liverpool F.C.,/wiki/Liverpool_F.C.,29.0,12
+12,7,Manchester City F.C.,/wiki/Manchester_City_F.C.,22.0,12
+12,8,Brazil national football team,/wiki/Brazil_national_football_team,19.0,15
+12,8,A.C. Milan,/wiki/A.C._Milan,19.0,12
+12,10,Tottenham Hotspur F.C.,/wiki/Tottenham_Hotspur_F.C.,18.0,12
+12,11,England national football team,/wiki/England_national_football_team,17.0,15
+12,11,Germany national football team,/wiki/Germany_national_football_team,17.0,12
+12,11,Juventus F.C.,/wiki/Juventus_F.C.,17.0,12
+12,14,FC Bayern Munich,/wiki/FC_Bayern_Munich,16.0,11
+12,15,New England Patriots,/wiki/New_England_Patriots,15.0,14
+12,16,Spain national football team,/wiki/Spain_national_football_team,14.0,12
+12,16,Los Angeles Lakers,/wiki/Los_Angeles_Lakers,14.0,11
+12,18,Borussia Dortmund,/wiki/Borussia_Dortmund,13.0,12
+12,18,Argentina national football team,/wiki/Argentina_national_football_team,13.0,10
+12,20,Italy national football team,/wiki/Italy_national_football_team,12.0,8
+12,20,France national football team,/wiki/France_national_football_team,12.0,16
+12,20,Newcastle United F.C.,/wiki/Newcastle_United_F.C.,12.0,12
+12,20,West Ham United F.C.,/wiki/West_Ham_United_F.C.,12.0,12
+12,20,Golden State Warriors,/wiki/Golden_State_Warriors,12.0,16
+12,25,Netherlands national football team,/wiki/Netherlands_national_football_team,11.0,12
+12,25,New York Yankees,/wiki/New_York_Yankees,11.0,13
+12,27,Paris Saint-Germain F.C.,/wiki/Paris_Saint-Germain_F.C.,10.0,12
+12,27,Miami Heat,/wiki/Miami_Heat,10.0,15
+12,27,Chicago Bulls,/wiki/Chicago_Bulls,10.0,11
+12,27,Aston Villa F.C.,/wiki/Aston_Villa_F.C.,10.0,12
+13,1,The Big Bang Theory,/wiki/The_Big_Bang_Theory,78.0,5
+13,2,How I Met Your Mother,/wiki/How_I_Met_Your_Mother,74.0,5
+13,2,Game of Thrones,/wiki/Game_of_Thrones,74.0,5
+13,4,Glee,/wiki/Glee_(TV_series),64.0,27
+13,5,The Walking Dead,/wiki/The_Walking_Dead_(TV_series),63.0,6
+13,6,Star Wars,/wiki/Star_Wars,62.0,5
+13,7,Breaking Bad,/wiki/Breaking_Bad,60.0,5
+13,8,Doctor Who,/wiki/Doctor_Who,54.0,19
+13,9,Grey's Anatomy,/wiki/Grey%27s_Anatomy,47.0,21
+13,9,RMS Titanic,/wiki/RMS_Titanic,47.0,14
+13,11,Lost,/wiki/Lost_(TV_series),46.0,5
+13,11,Dexter,/wiki/Dexter_(TV_series),46.0,26
+13,11,Naruto,/wiki/Naruto,46.0,17
+13,14,Family Guy,/wiki/Family_Guy,44.4,6
+13,14,The Avengers,/wiki/The_Avengers_(2012_film),44.4,19
+13,14,House,/wiki/House_(TV_series),44.4,19
+13,17,Avatar,/wiki/Avatar_(2009_film),41.0,5
+13,18,True Blood,/wiki/True_Blood,40.0,5
+13,18,The Dark Knight Rises,/wiki/The_Dark_Knight_Rises,40.0,19
+13,20,Friends,/wiki/Friends,39.0,5
+13,21,Two and a Half Men,/wiki/Two_and_a_Half_Men,38.0,5
+13,21,Sons of Anarchy,/wiki/Sons_of_Anarchy,38.0,15
+13,21,The Vampire Diaries,/wiki/The_Vampire_Diaries,38.0,21
+13,24,Arrow,/wiki/Arrow_(TV_series),37.0,19
+13,24,Sherlock,/wiki/Sherlock_(TV_series),37.0,15
+13,26,South Park,/wiki/South_Park,35.0,11
+13,26,NCIS,/wiki/NCIS_(TV_series),35.0,10
+13,26,The Office (US),/wiki/The_Office_(U.S._TV_series),35.0,19
+13,29,Heroes,/wiki/Heroes_(TV_series),34.0,24
+13,29,Titanic,/wiki/Titanic_(1997_film),34.0,5
+14,1,Thriller,/wiki/Thriller_(Michael_Jackson_album),12.0,18
+14,1,Sgt. Pepper's Lonely Hearts Club Band,/wiki/Sgt._Pepper%27s_Lonely_Hearts_Club_Band,12.0,18
+14,1,Recovery,/wiki/Recovery_(Eminem_album),12.0,16
+14,4,The Dark Side of the Moon,/wiki/The_Dark_Side_of_the_Moon,11.0,18
+14,4,My Beautiful Dark Twisted Fantasy,/wiki/My_Beautiful_Dark_Twisted_Fantasy,11.0,18
+14,6,21,/wiki/21_(Adele_album),10.0,18
+14,7,The Beatles,/wiki/The_Beatles_(album),9.6,18
+14,8,The Wall,/wiki/The_Wall,9.3,18
+14,9,Abbey Road,/wiki/Abbey_Road,8.7,18
+14,10,Watch the Throne,/wiki/Watch_the_Throne,8.2,18
+14,11,Nevermind,/wiki/Nevermind,8.0,17
+14,12,The Marshall Mathers LP,/wiki/The_Marshall_Mathers_LP,7.8,16
+14,13,808s & Heartbreak,/wiki/808s_%26_Heartbreak,7.4,18
+14,14,Loud,/wiki/Loud_(Rihanna_album),7.0,19
+14,14,Teenage Dream,/wiki/Teenage_Dream_(Katy_Perry_album),7.0,18
+14,16,Graduation,/wiki/Graduation_(album),6.6,18
+14,16,Led Zeppelin IV,/wiki/Led_Zeppelin_IV,6.6,15
+14,18,Let It Be,/wiki/Let_It_Be,6.4,18
+14,19,Circus,/wiki/Circus_(Britney_Spears_album),6.3,14
+14,19,Fearless,/wiki/Fearless_(Taylor_Swift_album),6.3,18
+14,19,The Eminem Show,/wiki/The_Eminem_Show,6.3,16
+14,19,The Slim Shady LP,/wiki/The_Slim_Shady_LP,6.3,16
+14,23,The Fame,/wiki/The_Fame,6.2,14
+14,24,Red,/wiki/Red_(Taylor_Swift_album),6.1,8
+14,24,Metallica,/wiki/Metallica_(album),6.1,16
+14,24,Rubber Soul,/wiki/Rubber_Soul,6.1,18
+14,27,Bad,/wiki/Bad_(album),5.8,18
+14,27,Yeezus,/wiki/Yeezus,5.8,18
+14,29,Death Magnetic,/wiki/Death_Magnetic,5.6,16
+14,29,American Idiot,/wiki/American_Idiot,5.6,18
+15,1,Harry Potter,/wiki/Harry_Potter,64.0,19
+15,2,Fifty Shades of Grey,/wiki/Fifty_Shades_of_Grey,45.0,18
+15,3,The Hunger Games,/wiki/The_Hunger_Games,43.0,17
+15,4,A Song of Ice and Fire,/wiki/A_Song_of_Ice_and_Fire,38.0,5
+15,5,The Great Gatsby,/wiki/The_Great_Gatsby,27.0,21
+15,6,The Lord of the Rings,/wiki/The_Lord_of_the_Rings,25.0,5
+15,7,A Game of Thrones,/wiki/A_Game_of_Thrones,23.0,6
+15,8,Kama Sutra,/wiki/Kama_Sutra,22.0,11
+15,8,Nineteen Eighty-Four,/wiki/Nineteen_Eighty-Four,22.0,9
+15,10,Alice's Adventures in Wonderland,/wiki/Alice%27s_Adventures_in_Wonderland,19.0,19
+15,10,Les Misérables,/wiki/Les_Mis%C3%A9rables,19.0,18
+15,10,To Kill a Mockingbird,/wiki/To_Kill_a_Mockingbird,19.0,23
+15,10,Harry Potter and the Deathly Hallows,/wiki/Harry_Potter_and_the_Deathly_Hallows,19.0,20
+15,14,The Girl with the Dragon Tattoo,/wiki/The_Girl_with_the_Dragon_Tattoo,18.0,24
+15,14,Watchmen,/wiki/Watchmen,18.0,18
+15,16,The Catcher in the Rye,/wiki/The_Catcher_in_the_Rye,16.0,18
+15,16,The Winds of Winter,/wiki/The_Winds_of_Winter,16.0,5
+15,16,The Hobbit,/wiki/The_Hobbit,16.0,20
+15,19,Sex,/wiki/Sex_(book),17.0,17
+15,20,Pride and Prejudice,/wiki/Pride_and_Prejudice,16.0,12
+15,21,Inferno,/wiki/Inferno_(Dante),15.0,15
+15,21,Code Geass,/wiki/Code_Geass,15.0,10
+15,23,Lolita,/wiki/Lolita,14.0,12
+15,23,Frankenstein,/wiki/Frankenstein,14.0,22
+15,23,Bible,/wiki/Bible,14.0,15
+15,23,The Picture of Dorian Gray,/wiki/The_Picture_of_Dorian_Gray,14.0,23
+15,23,Dracula,/wiki/Dracula,14.0,6
+15,23,Animal Farm,/wiki/Animal_Farm,14.0,25
+15,29,Of Mice and Men,/wiki/Of_Mice_and_Men,13.0,18
+15,29,Brave New World,/wiki/Brave_New_World,13.0,22
+15,29,Odyssey,/wiki/Odyssey,13.0,13
+15,29,American Idiot,/wiki/American_Idiot,13.0,18
+15,29,Porno,/wiki/Porno_(novel),13.0,22
+16,1,Kama Sutra,/wiki/Kama_Sutra,22.0,11
+16,2,Inferno (Dante),/wiki/Inferno_(Dante),15.0,15
+16,3,Bible,/wiki/Bible,14.0,15
+16,4,Odyssey,/wiki/Odyssey,13.0,13
+16,5,Rosetta Stone,/wiki/Rosetta_Stone,11.0,11
+16,5,Divine Comedy,/wiki/Divine_Comedy,11.0,18
+16,7,Quran,/wiki/Quran,10.0,15
+16,8,Iliad,/wiki/Iliad,9.8,19
+16,9,Mahabharata,/wiki/Mahabharata,9.7,18
+16,10,The Art of War,/wiki/The_Art_of_War,8.3,14
+16,11,Ramayana,/wiki/Ramayana,8.1,19
+16,12,Epic of Gilgamesh,/wiki/Epic_of_Gilgamesh,7.5,19
+16,13,The Canterbury Tales,/wiki/The_Canterbury_Tales,7.1,17
+16,14,Vedas,/wiki/Vedas,6.7,8
+16,15,Talmud,/wiki/Talmud,6.2,26
+16,16,One Thousand and One Nights,/wiki/One_Thousand_and_One_Nights,6.1,15
+16,17,Code of Hammurabi,/wiki/Code_of_Hammurabi,6.0,18
+16,18,I Ching,/wiki/I_Ching,4.8,22
+16,19,Oedipus the King,/wiki/Oedipus_the_King,4.6,5
+16,20,Book of the Dead,/wiki/Book_of_the_Dead,4.3,14
+16,21,Aeneid,/wiki/Aeneid,4.2,17
+16,22,Tao Te Ching,/wiki/Tao_Te_Ching,3.7,16
+16,23,Domesday Book,/wiki/Domesday_Book,3.5,20
+16,24,Rigveda,/wiki/Rigveda,3.2,8
+16,25,Upanishads,/wiki/Upanishads,3.1,9
+16,26,Cupid and Psyche,/wiki/Cupid_and_Psyche,2.8,18
+16,27,Lysistrata,/wiki/Lysistrata,2.6,19
+16,28,Titanomachy,/wiki/Titanomachy,2.4,24
+16,29,Mesoamerican Long Count calendar,/wiki/Mesoamerican_Long_Count_calendar,2.2,17
+16,30,The Decameron,/wiki/The_Decameron,2.1,18
+16,30,Nicomachean Ethics,/wiki/Nicomachean_Ethics,2.1,14

@@ -26,11 +26,11 @@ Rank,Text,Link,Popularity,Degrees
 25,Miley Cyrus,/wiki/Miley_Cyrus,67.7,20
 26,Elizabeth II,/wiki/Elizabeth_II,67.0,12
 27,List of Presidents of the United States,/wiki/List_of_Presidents_of_the_United_States,66.0,10
-28,Harry Potter,/wiki/Harry_Potter,65.4,19
-29,Rihanna,/wiki/Rihanna,64.6,18
+28,Harry Potter,/wiki/Harry_Potter,65.4,29
+29,Rihanna,/wiki/Rihanna,64.6,14
 30,Japan,/wiki/Japan,64.5,8
 30,Selena Gomez,/wiki/Selena_Gomez,64.0,21
-30,Glee (TV series),/wiki/Glee_(TV_series),64.0,27
+30,Glee (TV series),/wiki/Glee_(TV_series),64.0,37
 30,Germany,/wiki/Germany,64.0,8
 34,The Walking Dead (TV series),/wiki/The_Walking_Dead_(TV_series),63.5,6
 35,Abraham Lincoln,/wiki/Abraham_Lincoln,63.3,11
@@ -76,11 +76,11 @@ Rank,Text,Link,Popularity,Degrees
 73,Arnold Schwarzenegger,/wiki/Arnold_Schwarzenegger,50.0,13
 73,Will Smith,/wiki/Will_Smith,50.0,10
 73,September 11 attacks,/wiki/September_11_attacks,50.0,11
-78,Halloween,/wiki/Halloween,49.0,22
-78,Prince (musician),/wiki/Prince_(musician),49.0,14
+78,Halloween,/wiki/Halloween,49.0,32
+78,Prince (musician),/wiki/Prince_(musician),49.0,11
 80,David Bowie,/wiki/David_Bowie,48.3,14
 80,England,/wiki/England,48.3,14
-80,Singapore,/wiki/Singapore,48.3,11
+80,Singapore,/wiki/Singapore,48.3,20
 83,Pornography,/wiki/Pornography,48.0,9
 83,Israel,/wiki/Israel,48.0,15
 83,Bruce Lee,/wiki/Bruce_Lee,48.0,18
@@ -93,7 +93,7 @@ Rank,Text,Link,Popularity,Degrees
 88,RMS Titanic,/wiki/RMS_Titanic,47.0,14
 93,Naruto,/wiki/Naruto,46.1,17
 93,Masturbation,/wiki/Masturbation,46.1,10
-95,AMGTV,/wiki/AMGTV,46.0,12
+95,AMGTV,/wiki/AMGTV,46.0,16
 95,English language,/wiki/English_language,46.0,19
 95,Lost (TV series),/wiki/Lost_(TV_series),46.0,5
 95,American Civil War,/wiki/American_Civil_War,46.0,10
